@@ -1,0 +1,8 @@
+
+CREATE TABLE admin_sessions (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  admin_email TEXT NOT NULL,
+  session_token TEXT NOT NULL UNIQUE,
+  expires_at DATETIME NOT NULL,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);

@@ -1,0 +1,3 @@
+
+ALTER TABLE matches ADD COLUMN is_visible BOOLEAN DEFAULT TRUE;
+ALTER TABLE matches ADD COLUMN half_time_offset INTEGER DEFAULT 0;
